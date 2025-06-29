@@ -27,55 +27,54 @@ This project automates the deployment of an EC2 instance on AWS using Terraform.
 
 ⚙ Configuration
 
-Use dev_config.tfvars or prod_config.tfvars to set:
-
-hcl
-instance_type = "t2.micro"
-github_repo   = "https://github.com/techeazy-consulting/techeazy-devops"
-stage         = "dev"
-subnet_id     = "subnet-xxxxxxx"
-
+Use dev_config.tfvars or prod_config.tfvars to set:   
+     
+hcl                                
+instance_type = "t2.micro"                                                       
+github_repo   = "https://github.com/techeazy-consulting/techeazy-devops"            
+stage         = "dev"                          
 
 ---
 
-📁 File Structure
 
-
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── dev_config.tfvars
-├── prod_config.tfvars
-├── scripts/
-│   └── user_data.sh
-└── README.md
+📁 File Structure        
+                  
+                     
+├── main.tf              
+├── variables.tf                      
+├── outputs.tf                  
+├── dev_config.tfvars                    
+├── prod_config.tfvars                  
+├── scripts/                     
+│   └── user_data.sh                           
+└── README.md                                      
 
 
 ---
 
 📦 Deployment Steps
 
-1. Initialize Terraform:
-   
-   terraform init
-   
-
-2. Plan the deployment:
-   ```
-   terraform plan -var-file="dev_config.tfvars"
-   
-
-3. Apply the deployment:
-   
-   terraform apply -var-file="dev_config.tfvars"
-   
-
-4. Destroy (when done):
-   
-   terraform destroy -var-file="dev_config.tfvars"
-   ```
-
----
+1. Initialize Terraform:        
+                   
+   terraform init              
+                                  
+                           
+2. Plan the deployment:             
+   ```                                               
+   terraform plan -var-file="dev_config.tfvars"          
+                             
+                             
+3. Apply the deployment:                      
+                                                  
+   terraform apply -var-file="dev_config.tfvars"              
+                               
+                             
+4. Destroy (when done):       
+                                                      
+   terraform destroy -var-file="dev_config.tfvars"      
+   ```                   
+                   
+---               
 
 🔐 Security
 
