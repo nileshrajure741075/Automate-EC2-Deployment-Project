@@ -65,12 +65,12 @@ stage         = "dev"
                              
                              
 3. Apply the deployment:                      
-                                                  
+   ```                                               
    terraform apply -var-file="dev_config.tfvars"              
                                
                              
 4. Destroy (when done):       
-                                                      
+   ```                                                   
    terraform destroy -var-file="dev_config.tfvars"      
    ```                   
                    
