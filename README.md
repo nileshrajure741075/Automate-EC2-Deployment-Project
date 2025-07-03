@@ -4,7 +4,7 @@ This project automates the deployment of an EC2 instance on AWS using Terraform.
 
 ---
 
-🚀 Features
+## 🚀 Features
 
 - Spin up EC2 instances based on stage (Dev, Prod)
 - Install Java 21 on the instance
@@ -15,7 +15,7 @@ This project automates the deployment of an EC2 instance on AWS using Terraform.
 
 ---
 
-🔧 Prerequisites
+## 🔧 Prerequisites
 
 - AWS account with free-tier access
 - AWS CLI configured
@@ -25,7 +25,7 @@ This project automates the deployment of an EC2 instance on AWS using Terraform.
 
 ---
 
-⚙ Configuration
+## ⚙ Configuration
 
 Use dev_config.tfvars or prod_config.tfvars to set:   
                                    
@@ -36,7 +36,7 @@ stage         = "dev"
 ---
 
 
-📁 File Structure        
+## 📁 File Structure        
                   
                      
 ├── main.tf              
@@ -51,7 +51,7 @@ stage         = "dev"
 
 ---
 
-📦 Deployment Steps
+## 📦 Deployment Steps
 
 1. Initialize Terraform:        
                    
@@ -75,7 +75,7 @@ stage         = "dev"
                    
 ---               
 
-🔐 Security
+## 🔐 Security
 
 - AWS credentials must be set in your environment
 - Do not hardcode any secrets in the code
