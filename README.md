@@ -1,4 +1,4 @@
-# Automated EC2 Deployment with Terraform##
+# Automated EC2 Deployment with Terraform
 
 This project automates the deployment of an EC2 instance on AWS using Terraform. It includes installing dependencies (like Java 21), cloning a GitHub repository, deploying a web app, and scheduling shutdowns to control costs.
 
