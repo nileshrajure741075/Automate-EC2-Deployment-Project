@@ -28,8 +28,7 @@ This project automates the deployment of an EC2 instance on AWS using Terraform.
 ⚙ Configuration
 
 Use dev_config.tfvars or prod_config.tfvars to set:   
-     
-hcl                                
+                                   
 instance_type = "t2.micro"                                                       
 github_repo   = "https://github.com/techeazy-consulting/techeazy-devops"            
 stage         = "dev"                          
